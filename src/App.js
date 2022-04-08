@@ -17,7 +17,6 @@ function App() {
     try {
       const { data } = await ContactsApi(nationality, gender);
       const users = data.results;
-
       setUsers(users);
     } catch (error) {
       setError("something went wrong");
