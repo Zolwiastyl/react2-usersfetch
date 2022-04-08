@@ -24,10 +24,9 @@ const nationalityOptions = [
   { label: "Great Britain ", value: "gb" },
 ];
 
-export const Filters = ({ updateFiltersCallback }) => {
+export const Filters = ({ setGender, setNationality, nationality, gender }) => {
   const classes = useStyles();
-  const [gender, setGender] = useState("");
-  const [nationality, setNationality] = useState("");
+
   return (
     <div>
       <FormControl className={classes.formControl}>
